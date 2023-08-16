@@ -1,0 +1,25 @@
+# pengujian API
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/4
+z
+###
+POST  http://localhost:5000/products/
+Content-Type: application/json
+
+{
+  "name": "Product 3",
+  "price": 100
+}
+###
+PATCH  http://localhost:5000/products/3
+Content-Type: application/json
+
+{
+  "name": "Product 4 Updated",
+  "price": 100
+}
+
+###
+DELETE   http://localhost:5000/products/6
